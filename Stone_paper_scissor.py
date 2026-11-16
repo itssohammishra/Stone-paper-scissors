@@ -10,7 +10,7 @@ while True:
         print('Choose a suitable choice')
         time.sleep(2)
         continue
-    Transform = {'s':'Scissors ✂️','r':' Stone 🪨','p':'Paper 📜'}
+    Transform = {'s':'Scissors ','r':' Stone ','p':'Paper '}
     My_choice = random.choice(Choices)
     print(f'''Your choice is {Transform[Your_choice]}''')
     time.sleep(1)
@@ -19,11 +19,11 @@ while True:
     if Your_choice == 'r' and My_choice == 's' \
     or Your_choice == 'p' and My_choice == 'r'\
     or Your_choice == 's' and My_choice == 'p' :
-        print('Congo! you win 🍾')
+        print('Congo! you win ')
     elif Your_choice == My_choice :
         print('''It's a tie''')
     else:
-        print('Yay! I win 🏆')
+        print('Yay! I win ')
     time.sleep(1)
     Repeat = input('Do you want to continue?(y/n) ')
     if Repeat != 'y':
